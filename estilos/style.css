@@ -8,3 +8,15 @@
     Lilás: #5f2c82 
 */
 
+/* 
+*{
+margin: 0px;
+padding: 0px;
+} 
+*/
+
+body{
+    background: linear-gradient(to top, #49a09d, #5f2c82);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
