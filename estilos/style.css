@@ -1,5 +1,7 @@
 @charset "UTF-8";
-
+/* 
+Mobile first
+*/
 /* 
     paleta de cores
     preto
@@ -7,16 +9,57 @@
     Verde: #49a09d
     Lilás: #5f2c82 
 */
-
-/* 
+ 
 *{
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 margin: 0px;
 padding: 0px;
+box-sizing: border-box;
 } 
-*/
 
-body{
-    background: linear-gradient(to top, #49a09d, #5f2c82);
+body, html{
+    background-color: #5f2c82;
+    height: 100vh;
+    width: 100vw;
     background-size: contain;
     background-repeat: no-repeat;
+}
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+section#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+section#login > div#imagem{
+    display: block;
+    background: #5f2c82 url(../imagens/pexels-bruthethe-3035998.jpg);
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+section#login > div#form{
+    display: block;
+    padding: 10px;
+
+}
+#iemail, #isenha{
+    border-radius: 10px;
+}
+h1{
+    text-align: center;
+}
+p{
+    font-size: 0.9em;
 }
